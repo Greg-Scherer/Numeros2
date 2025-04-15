@@ -59,13 +59,20 @@ console.log(imc)
 /*
 */
 
-let nota = 9 
+let nota1 = 9
 let nota2 = 7
-let nota3 = 3
+let nota3 = 4
+let mediaNota = (nota1 + nota2 + nota3 ) / 3 
 
-if (nota >= 7 && nota2 >= 7 && nota3 >= 7) {
-    console.log("Aprovado")
+if (mediaNota >= 9){
+ console.log("Pasçou")
 }
-else if (nota >= 5 && nota2 >= 5 && nota3 >= 5) {
-    console.log("Recuperação")
+else if (mediaNota < 9 && mediaNota >= 7.5){
+    console.log("Nota B")
+}
+else if (mediaNota < 7 && mediaNota >= 4){
+    console.log("Nota C")
+}
+else {
+    console.log("Reprovado")
 }
